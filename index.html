@@ -4,25 +4,45 @@
   <meta charset="UTF-8">
   <title>Student Evaluation Summary</title>
   <style>
-  body {
-    font-family: sans-serif;
-    padding: 2rem;
-    background-color: #f9f9f9;
-  }
-  h1 {
-    color: #333;
-  }
-  iframe {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-</style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+
+    header {
+      padding: 1rem;
+      background-color: #004684;
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    iframe {
+      flex-grow: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Student Evaluation Summary</h1>
-
+  <div class="container">
+    <header>
+      Student Evaluation Summary
+    </header>
   <!-- Embed Google Sheet -->
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvIyGByt7B0DdtnUJ4aTYzpx1iFc5lXf_rJ5B8BOpv7B0HS55YqtTRxp-jladvIg/pubhtml?widget=true&amp;headers=false"></iframe>
 
+  </div>
 </body>
 </html>
